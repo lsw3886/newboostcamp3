@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="맛집 이름"
+        android:id="@+id/resName"
+        android:background="@drawable/roundcorner"
+        android:paddingLeft="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        />
+
+    <EditText
+        android:hint="맛집 주소"
+        android:background="@drawable/roundcorner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/resAddress"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+
+
+        />
+
+    <EditText
+        android:hint="맛집 전화번호"
+        android:id="@+id/resPhoneNum"
+        android:background="@drawable/roundcorner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="글자 수 : "
+            android:layout_marginEnd="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/countString"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:hint="내용"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/resContext"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/roundcorner"
+        android:maxLength="500"
+        android:padding="16dp"
+        android:gravity="top"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:layout_gravity="right"
+        android:id="@+id/savaButton"
+        android:layout_marginRight="16dp"
+        />
+</LinearLayout>

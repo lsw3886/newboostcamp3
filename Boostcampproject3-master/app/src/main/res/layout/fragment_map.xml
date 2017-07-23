@@ -1,0 +1,45 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.MapFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:text="hello"
+            android:textColor="#FFFFFF"
+            android:background="#88000000"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+           />
+
+    </FrameLayout>
+
+    <Button
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="다음"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:id="@+id/nextButton"
+    />
+
+
+</LinearLayout>
+
